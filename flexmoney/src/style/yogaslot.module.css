@@ -1,0 +1,57 @@
+.cont {
+	width: 100%;
+	height: auto;
+	/* border: 1px solid #41403e40; */
+	margin-top: 2rem;
+}
+.unpaid {
+	width: 100%;
+}
+.unpaid p {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+.unpaid form {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	column-gap: 2rem;
+}
+.unpaid form div {
+	flex: 1;
+	border: 1px solid #41403e40;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	height: 3rem;
+	border-radius: 1rem;
+}
+
+.unpaid form input {
+	display: none;
+}
+.unpaid form label {
+	width: 100%;
+	/* margin: 1rem; */
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+}
+
+.unpaid form input:checked ~ label {
+	background-color: #add08c;
+	color: #fff;
+}
+.unpaid button {
+	height: 3rem;
+	width: 40%;
+	margin-left: 30%;
+	margin-top: 2rem;
+	border: 1px solid #41403e40;
+	border-radius: 1rem;
+	font-size: 1.5rem;
+	background-color: #add08c;
+	color: #fff;
+}

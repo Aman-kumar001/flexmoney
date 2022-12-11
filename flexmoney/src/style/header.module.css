@@ -1,0 +1,12 @@
+.header {
+	width: 100vw;
+	background-color: #add08c;
+	/* height: 2rem; */
+	padding: 0.7rem 0rem;
+	color: #41403e;
+}
+.header h1 {
+	margin: 0;
+	width: 80%;
+	margin: auto;
+}
