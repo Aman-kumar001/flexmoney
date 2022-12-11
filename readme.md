@@ -1,4 +1,4 @@
-# FLEXMONEY
+# GoFlex
 
 ## To run on a local system follow the following steps:
 
