@@ -59,7 +59,7 @@ const YogaSlot = ({ tel, setTel }) => {
 					</p>
 					<p>Thank you for enrolling to your course.</p>
 					<p>
-						Please join at <b>{data.slot}</b>
+						Please join at <b>{data.slot == 'none' ? slot : data.slot}</b>
 					</p>
 				</div>
 			)}
