@@ -64,13 +64,19 @@
 }
 .formNew input,
 .formOld input {
-	float: right;
+	/* float: right; */
 	height: 1.2rem;
 	font-size: 1.1rem;
 	letter-spacing: 0.1rem;
 	border-radius: 0.5rem;
 	padding: 0.5rem;
 	border: 1px solid #41403e40;
+}
+.formNew div,
+.formOld div {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
 }
 .formNew form,
 .formOld form {

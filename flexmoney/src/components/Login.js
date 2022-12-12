@@ -22,7 +22,7 @@ const LogIn = ({ tel, setTel }) => {
 			phone: `${tel}`,
 			pwd: `${code}`,
 			slot: 'none',
-			fees: 'november',
+			fees: 'none',
 		};
 		if (18 <= age && age <= 65) {
 			console.log(payLoad);
@@ -91,46 +91,54 @@ const LogIn = ({ tel, setTel }) => {
 					{newUser && (
 						<div className={styles.formNew}>
 							<form action=''>
-								<label htmlFor='name'>Name</label>
-								<input
-									type='text'
-									name='name'
-									id='name'
-									onChange={(e) => {
-										setName(e.target.value);
-									}}
-								/>
-								<br />
-								<label htmlFor='tel'>Phone No.</label>
-								<input
-									type='tel'
-									name='name'
-									id='name'
-									onChange={(e) => {
-										setTel(e.target.value);
-									}}
-								/>
-								<br />
-								<label htmlFor='Age'>Age</label>
-								<input
-									type='number'
-									name='age'
-									id='age'
-									onChange={(e) => {
-										setAge(e.target.value);
-									}}
-								/>
-								<br />
-								<label htmlFor='pwd'>Passcode {`(4 digit)`}</label>
-								<input
-									type='password'
-									name='pwd'
-									id='pwd'
-									onChange={(e) => {
-										setCode(e.target.value);
-									}}
-								/>
-								<br />
+								<div>
+									<label htmlFor='name'>Name</label>
+									<input
+										type='text'
+										name='name'
+										id='name'
+										onChange={(e) => {
+											setName(e.target.value);
+										}}
+									/>
+								</div>
+
+								<div>
+									<label htmlFor='tel'>Phone No.</label>
+									<input
+										type='tel'
+										name='name'
+										id='name'
+										onChange={(e) => {
+											setTel(e.target.value);
+										}}
+									/>
+								</div>
+
+								<div>
+									<label htmlFor='Age'>Age</label>
+									<input
+										type='number'
+										name='age'
+										id='age'
+										onChange={(e) => {
+											setAge(e.target.value);
+										}}
+									/>
+								</div>
+
+								<div>
+									<label htmlFor='pwd'>Passcode {`(4 digit)`}</label>
+									<input
+										type='password'
+										name='pwd'
+										id='pwd'
+										onChange={(e) => {
+											setCode(e.target.value);
+										}}
+									/>
+								</div>
+
 								<button onClick={(e) => createUser(e)}>Submit</button>
 							</form>
 						</div>
@@ -138,26 +146,30 @@ const LogIn = ({ tel, setTel }) => {
 					{!newUser && (
 						<div className={styles.formOld}>
 							<form action=''>
-								<label htmlFor='tel'>Phone No.</label>
-								<input
-									type='tel'
-									name='name'
-									id='name'
-									onChange={(e) => {
-										setTel(e.target.value);
-									}}
-								/>
-								<br />
-								<label htmlFor='pwd'>Passcode {`(4 digit)`}</label>
-								<input
-									type='password'
-									name='pwd'
-									id='pwd'
-									onChange={(e) => {
-										setCode(e.target.value);
-									}}
-								/>
-								<br />
+								<div>
+									<label htmlFor='tel'>Phone No.</label>
+									<input
+										type='tel'
+										name='name'
+										id='name'
+										onChange={(e) => {
+											setTel(e.target.value);
+										}}
+									/>
+								</div>
+
+								<div>
+									<label htmlFor='pwd'>Passcode {`(4 digit)`}</label>
+									<input
+										type='password'
+										name='pwd'
+										id='pwd'
+										onChange={(e) => {
+											setCode(e.target.value);
+										}}
+									/>
+								</div>
+
 								<button
 									onClick={(e) => {
 										loginUser(e);
